@@ -1,0 +1,29 @@
+{
+  "name": "auth1-project",
+  "version": "1.0.0",
+  "description": "Node Auth 1 Module Challenge",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LambdaSchool/node-auth1-project.git"
+  },
+  "author": "Lambda School",
+  "bugs": {
+    "url": "https://github.com/janemsuh/node-auth1-project/issues"
+  },
+  "homepage": "https://github.com/LambdaSchool/node-auth1-project#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "knex": "^0.21.1",
+    "sqlite3": "^4.2.0"
+  }
+}
