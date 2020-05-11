@@ -11,12 +11,12 @@ function find() {
     return db('users').select('id', 'username');
 };
 
-function findBy(filter) {
-    return db('users').select('id', 'username', 'password').where(filter);
+function findBy(field, filter) {
+    return db('users').where(field, filter).select('id', 'username', 'password');
 };
 
 function findById(id) {
-    return db('users').select('id', 'username').where({ id }).first();
+    return db('users').where('id', id).select('id', 'username').first();
 };
 
 module.exports = {
